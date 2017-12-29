@@ -25,5 +25,16 @@ class LinkedList:
             curr = curr.next
         return res
 
+    def is_empty(self):
+        return self.head is None
+
+    def size(self):
+        count = 0
+        curr = self.head
+        while curr:
+            count += 1
+            curr = curr.next
+        return count
+
     def reverse(self):
         pass
